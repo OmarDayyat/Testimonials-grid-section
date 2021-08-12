@@ -1,5 +1,139 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 /*================
+General
+=================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: #ecf2f8;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+h4 span {
+  display: block;
+  opacity: 0.5;
+}
+
+/*================
+  Grid Container
+=================*/
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr  2fr 2fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr  2fr 2fr 2fr 2fr 1fr;
+  -ms-grid-rows: 1fr 2fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 2fr 1fr;
+  gap: 20px;
+}
+
+/*================
+ Container
+=================*/
+.container {
+  border-radius: 10px;
+  padding: 20px 30px 40px 40px;
+}
+
+/*================
+ Profile Container
+=================*/
+.profile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-image {
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.image-1 {
+  border: 2px solid #ae90df;
+}
+
+/*================
+  Grid Items
+=================*/
+.grid-item-1 {
+  background-color: #7541c8;
+  color: white;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-item-2 {
+  background-color: #48556a;
+  color: white;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.grid-item-3 {
+  background-color: white;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 4;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 6;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item-4 {
+  background-color: white;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item-5 {
+  background-color: #19212e;
+  color: white;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+/*================
 Attribution
 =================*/
 .attribution {

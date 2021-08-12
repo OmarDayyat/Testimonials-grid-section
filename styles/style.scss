@@ -1,6 +1,129 @@
 @import "_variables.scss";
 
 /*================
+General
+=================*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+html{
+  font-size: 13px;
+  font-family: $font;
+  background-color: $Light-grayish-blue;
+}
+
+h2{
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p{
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+h4{
+  margin-bottom: 20px;
+  span{
+    display: block;
+    opacity: 0.5;
+  }
+}
+
+/*================
+  Grid Container
+=================*/
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr  2fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  gap: 20px;
+}
+
+/*================
+ Container
+=================*/
+
+.container{
+  border-radius: 10px;
+  padding: 20px 30px 40px 40px;
+}
+
+/*================
+ Profile Container
+=================*/
+
+.profile-container{
+  display: flex;
+}
+
+.profile-image{
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.image-1{
+  border: 2px solid $Moderate-violet-image;
+}
+
+/*================
+  Grid Items
+=================*/
+
+.grid-item-1{
+  background-color: $Moderate-violet;
+  color: $White;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-item-2{
+  background-color: $Very-dark-grayish-blue;
+  color: $White;
+  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+
+.grid-item-3{
+  background-color: $White;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  box-shadow: 5px 10px 20px hsla(0, 0%, 0%,0.2);
+}
+
+.grid-item-4{
+  background-color: $White;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  box-shadow: 5px 10px 20px hsla(0, 0%, 0%,0.2);
+}
+
+.grid-item-5{
+  background-color: $Very-dark-blackish-blue;
+  color: $White;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+
+/*================
 Attribution
 =================*/
 
